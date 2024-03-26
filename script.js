@@ -2,7 +2,7 @@ window.onload = async function() {
     const almanacList = document.getElementById('almanac-list');
 
     try {
-        const response = await fetch('https://api.github.com/repos/Sun-of-Sobros/almanac/');
+        const response = await fetch('https://api.github.com/Sun-of-Sobros/almanac/contents');
         if (!response.ok) {
             throw new Error('Failed to fetch almanac files');
         }
